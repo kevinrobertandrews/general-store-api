@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon .",
-    "start": "node NODE_ENV='production' index.js"
+    "start": "NODE_ENV=production && node index.js"
   },
   "keywords": [],
   "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
