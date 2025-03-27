@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon .",
-    "start": "NODE_ENV=production && node index.js"
+    "start": "cross-env NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
@@ -14,5 +14,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
