@@ -1,16 +1,15 @@
+require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
+const cors = require("./middleware/cors.middleware");
+const json = require("./middleware/json.middleware");
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://testing-20250327.netlify.app",
-  })
-);
-app.use(express.json());
+app.use(cors());
+app.use(json());
 
 app.get("/", (req, res) => {
+  console.log("root request");
   res.status(200).json({ status: "success", message: "Ok." });
 });
 
