@@ -9,7 +9,6 @@ app.use(cors());
 app.use(json());
 
 app.get("/", (req, res) => {
-  console.log("root request");
   res.status(200).json({ status: "success", message: "Ok." });
 });
 
